@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lui's Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Background pattern -->
+  <div class="bg"></div>
+
+  <!-- Main window -->
+  <main class="window">
+    <!-- Top bar -->
+    <header class="topbar">
+      <div class="dots">
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="url">
+        🔎 https://www.google.com/search
+      </div>
+
+      <div class="time" id="time">1:25 PM</div>
+    </header>
+
+    <!-- Tabs -->
+    <nav class="tabs">
+      <button class="tab active" data-tab="profile">Profile</button>
+      <button class="tab" data-tab="wardrobe">Hobbies</button>
+      <button class="tab" data-tab="wishlist">Wishlist</button>
+      <button class="tab" data-tab="others">Others</button>
+
+      <div class="icons">
+        <span>♱</span><span>♱</span><span>♱</span><span>♱</span>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner">
+      <div class="avatar"></div>
+      <div class="banner-strip"></div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="stat">
+        <div class="num" data-count="60">0</div>
+        <div class="pill">Following</div>
+      </div>
+
+      <div class="stat">
+        <div class="num" data-count="348">0</div>
+        <div class="pill">Followers</div>
+      </div>
+
+      <div class="stat">
+        <div class="num" data-count="20">0</div>
+        <div class="pill">Posts</div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="content">
+      <!-- Left card -->
+      <article class="card">
+        <h2 class="name">
+          Lui !! <span class="kaomoji">(≧◡≦)</span>
+        </h2>
+
+        <p class="big">
+          +★ レイアウト！！！<br />
+          about me<br />
+        </p>
+
+        <div class="mini-row">
+          <span class="mini">⌗</span>
+          <span class="mini">♡</span>
+          <span class="mini">⌗</span>
+        </div>
+
+        <div class="dolls">
+          <div class="doll"></div>
+          <div class="doll"></div>
+          <div class="doll"></div>
+          <div class="doll"></div>
+          <div class="doll"></div>
+        </div>
+      </article>
+
+      <!-- Right card -->
+      <article class="card">
+        <div class="card-title">
+          <span>My Profile</span>
+        </div>
+
+        <div class="profile-text">
+          <p>hi i’m Lui nice to meet you!</p>
+		  <p>she/her</p>
+		  <p>July 27 2009</p>
+          <p>Leo.</p>
+          <p>Ambivert.</p>
+
+          <p class="status">• status : breathing ??</p>
+        </div>
+
+        <div class="photo-strip">
+          <div class="photo left">
+            <span>lui</span>
+            <span>this is</span>
+          </div>
+          <div class="photo right">
+            <span>me</span>
+          </div>
+        </div>
+      </article>
+    </section>
+	
+    <section class="pages">
+      <div class="page active" id="profile">
+        <!-- already shown -->
+      </div>
+
+      <div class="page" id="wardrobe">
+        <div class="page-box">
+          <h3>Hobbies</h3>
+          <p>I play instruments, i play sports, i do photography, i cook, i eat, i sleep. ♱</p>
+        </div>
+      </div>
+
+      <div class="page" id="wishlist">
+        <div class="page-box">
+          <h3>Wishlist</h3>
+          <p>Instruments, a peaceful life</p>
+        </div>
+      </div>
+
+      <div class="page" id="others">
+        <div class="page-box">
+          <h3>Others</h3>
+          <p>i hate condiments..</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<section class="musicWrap">
+  <div class="musicTitle">Now Playing</div>
+
+  <div class="musicPlayer">
+    <button class="playBtn" id="playBtn" aria-label="Play/Pause">▶</button>
+
+    <div class="songInfo">
+      <div class="songName" id="songName">I Was Never There - The Weeknd ft. Gesaffelstein </div>
+
+      <div class="barRow">
+        <span class="t" id="currentTime">0:00</span>
+
+        <input
+          type="range"
+          id="seekBar"
+          value="0"
+          min="0"
+          max="100"
+          step="0.1"
+        />
+
+        <span class="t" id="duration">0:00</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHANGE THIS FILE PATH -->
+  <audio id="audio" preload="metadata">
+    <source src="The Weeknd - I Was Never There feat. Gesaffelstein (Official Audio).mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="musicHint">
+  <code>damn right.</code>
+  </div>
+</section>
+
+  <footer class="credit">
+    <span>made by</span> <b>PROJCTLUI</b>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
